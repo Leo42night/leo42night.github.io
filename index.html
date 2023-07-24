@@ -3,55 +3,66 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Parallax Scrolling website | Vanilla Javascript</title>
-	<link rel="stylesheet" href="style.css">
+	<title>dokumentasi HTML</title>
 </head>
 <body>
-	<header>
-		<a href="#" class="logo">Logo</a>
-		<ul>
-			<li><a href="#" class="active">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Work</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</header>
-	<section>
-		<img src="stars.png" id="stars">
-		<img src="moon.png" id="moon">
-		<img src="mountains_behind.png" id="mountains_behind">
-		<h2 id="text">Leo Prangs Tobing</h2>
-		<a href="#sec" id="btn">Explore</a>
-		<img src="mountains_front.png" id="mountains_front">
-	</section>
-	<div class="sec" id="sec">
-		<h2>Parallax Scrolling Effects</h2>
-		<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Eaque nesciunt nam qui alias voluptatibus fugiat amet debitis quisquam doloribus dignissimos, excepturi ab culpa, recusandae totam, ea sint vero animi? Architecto. Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ipsum doloribus voluptatibus at deserunt cumque eos repellendus. Eligendi ratione repellendus nihil aliquam, nisi nesciunt, nostrum, porro, at quisquam possimus atque animi?Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Eaque nesciunt nam qui alias voluptatibus fugiat amet debitis quisquam doloribus dignissimos, excepturi ab culpa, recusandae totam, ea sint vero animi? Architecto. Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ipsum doloribus voluptatibus at deserunt cumque eos repellendus. Eligendi ratione repellendus nihil aliquam, nisi nesciunt, nostrum, porro, at quisquam possimus atque animi?</p><br><br>
-		<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Eaque nesciunt nam qui alias voluptatibus fugiat amet debitis quisquam doloribus dignissimos, excepturi ab culpa, recusandae totam, ea sint vero animi? Architecto. Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ipsum doloribus voluptatibus at deserunt cumque eos repellendus. Eligendi ratione repellendus nihil aliquam, nisi nesciunt, nostrum, porro, at quisquam possimus atque animi?Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Eaque nesciunt nam qui alias voluptatibus fugiat amet debitis quisquam doloribus dignissimos, excepturi ab culpa, recusandae totam, ea sint vero animi? Architecto. Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ipsum doloribus voluptatibus at deserunt cumque eos repellendus. Eligendi ratione repellendus nihil aliquam, nisi nesciunt, nostrum, porro, at quisquam possimus atque animi?</p><br><br>
-		<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Eaque nesciunt nam qui alias voluptatibus fugiat amet debitis quisquam doloribus dignissimos, excepturi ab culpa, recusandae totam, ea sint vero animi? Architecto. Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ipsum doloribus voluptatibus at deserunt cumque eos repellendus. Eligendi ratione repellendus nihil aliquam, nisi nesciunt, nostrum, porro, at quisquam possimus atque animi?Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Eaque nesciunt nam qui alias voluptatibus fugiat amet debitis quisquam doloribus dignissimos, excepturi ab culpa, recusandae totam, ea sint vero animi? Architecto. Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ipsum doloribus voluptatibus at deserunt cumque eos repellendus. Eligendi ratione repellendus nihil aliquam, nisi nesciunt, nostrum, porro, at quisquam possimus atque animi?</p><br>
-	</div>
+	<!-- header -->
+<header>
+	<nav>
+		<img src="logo2.png" alt=""><a href="#">HTML</a> <a href="css.html">CSS</a> <a href="javaScript.html">JavaScript</a>
+	</nav>
+	<h1>Pengenalan HTML</h1>
+	<p>HyperText Markup Language. ini bukanlah bahasa pemograman murni, melainkan sebuah <em>"Markup"</em> language. sederhana nya, <strong>Markup adalah sebuah cetakan data/dokumen berisi konten yang dibungkus dalam tag <HTML></strong>. kemudian, <em>"HyperText"</em> merujuk pada kemampuan <strong>dokumen yang saling terhubung melalui link dan kecepatannya dalam bergerak</strong>, contohnya tag anchor :<xmp><a href="/">...</a></xmp>Jadi kenapa html tidak disebut bahasa pemograman murni? itu karena HTML hanya men-deklarasikan elemen, <u>tanpa menjalankan logika tertentu</u></p>
+</header>
 
-	<script>
-		let stars = document.getElementById('stars');
-		let moon = document.getElementById('moon');
-		let mountains_behind = document.getElementById('mountains_behind');
-		let text = document.getElementById('text');
-		let btn = document.getElementById('btn');
-		let mountains_front = document.getElementById('mountains_front');
-		let header = document.querySelector('header');
-		window.addEventListener('scroll', function(){
-			let value = window.scrollY;
-			stars.style.left = value *0.25 + 'px';
-			moon.style.top = value *1.5 + 'px';
-			mountains_behind.style.top = value * 0.5 + 'px';
-			mountains_front.style.top = value * 0 + 'px';
-			text.style.marginRight = value * 4 + 'px';
-			btn.style.marginTop = value * 1.5 + 'px';
-			header.style.top = value * 0.7 + 'px';
-		})
-	</script>
+	<!-- ending header -->
+	<!-- awal main -->
+<main>
+	<section>
+	<h3>jenis Tag yang penulis pahami (ckp tw):</h3>
+	<p>Ini yang dimaksud elemen dengan turunan(nested) jadi setiap tag memiliki relasi saling bungkus.</p>
+	<ul>
+		<li>Tag Utama : <xmp><!DOCTIPE html> <html> <head> <body> </xmp></li>
+		<li>Tag nested dan descendant : <xmp><HEAD> : <meta> <title> <link></xmp>
+			<xmp><BODY> : <header> <nav> <main> <section> <article> <aside> <footer> </xmp></li>
+		<li>Tag element display: <xmp>Block : <h1..6> <p> <img> (<ol><ul><li>) <form> <xmp></xmp>
+			<xmp>Inline: <a> <u> <em> <strong> <span> <div> <i> <button> <input> <abbr> </xmp></li>
+	</ul>
+	</section>
+<section>
+<h3>Hal-Hal <strong>Penting</strong> dalam tema HTML (bagi penulis sekarang)</h3>
+	<ol>
+		<li><h4>Struktur turunan Html Tree model</h4></li>
+		<p>seperti yang ditampilkan di atas. setiap tag memiliki hubungan ayah anak atau kakek cucu. contohnya ol dan li. namun yang menjadi masalah adalah tag yang tidak ada aturan pasti struktur turunanya, seperti div dsb.</p>
+		<li><h4>Penggunaan tag yang bermakna (format semantic)</h4></li>
+		<p>contoh : i dan em, bold dan strong, div dan span, section dan artikel. Hal ini untuk meningkatkan SEO web kedepannya</p>
+		<li><h4>Block dan Inline</h4></li>
+		<p>tag Block memenuhi lebar layar, jadi tidak akan ada tag tipe block yang satu baris dengan tag lain. sebaliknya, tag inline hanya mengikuti lebar isian nya, selebihnya bisa diisi tag lain. tidak terlalu sulit</p>
+		<li><h4>Tag Atribut</h4></li>
+		<p>beberapa tag memiliki atribut bawaan dan tag tambahan seperti style="" untuk CSS</p>
+		<li><h4>Posisi Main, Aside, Section dan Article</h4></li>
+		<p>merujuk pada content utama dalam halaman. Pengaturannya akan cukup membingungkan, karena tidak mengikuti aturan absolute yang ada pada header, nav, dan footer</p>
+		<li><h4>Responsive Web</h4></li>
+		<p>pada layar berbeda, seperti smartphone. tapi itu pembahasan CSS</p>
+		<li><h4>Pembungkusan dari section dan Div</h4></li>
+		<p>tujuannya agar konten didalamnya dapat di edit secara berkelompok.</p>
+	</ol>
+</section>
+<section>
+	<p>"Permasalahan terbesar dalam html adalah semantik. tidak akan mengganggu sampai nantinya dipublish dan digunakan dalam search engine"</p>
+	<ul># konsep yang didapat penulis dalam course pengenalan HTML di Sololearn
+<li>Getting Started { heading, image, landing page}</li>
+<li>Going Deeper { Commenting Code, Standarts & Best Practice, Text Formating, HyperText, List }</li>
+<li>Using Attributes { Attributes, Website Navigation, Forms, Form Data, Drop-Down Menu }</li>
+<li>Mastering HTML { Videos, Audio Media, Page Layout, The Style Attribute, Inline and Block, Content Division, Tables, Introducing JS }</li></ul>
+</section>	
+</main>
+	<!-- ending main -->
+	<!-- awal footer -->
+	<footer>
+	<h2>Tentang Halaman</h2>
+<p>Halaman ini merupakan dokumentasi penulis dalam roadmap belajar web developer. pemahama html dasar didapat dari course (Sololearn, mimo). youtube WPU maupun website seperti W3, GeeksForGeeks, dsb. </p>
+	<address>oleh <a href="https://www.linkedin.com/in/leoptobing" target="_blank" rel="noopener noreferrer">Leo Prangs T.</a> Jl. Imam Bonjol, gg. bansir 3, Pontianak Tenggara</address> <p>23 Juli 2023</p>
+	</footer>
 </body>
 </html>
-
-
-

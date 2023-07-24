@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dokumentasi CSS</title>
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<div class="container">
+	<nav>
+		<img src="logo2.png" alt=""><a href="index.html">HTML</a>+<a href="#" class="active">CSS</a> <a href="javaScript.html" style="position: relative; left: 3px">JavaScript</a>
+	</nav>
+	<header>
+		<h1 id="h1">Pengenalan CSS <button onclick="change()" id="but">Upgrade !</button></h1>
+		<p>Cascading StyleSheet. StyleSheet secara sederhana berarti <b>Kumpulan Gaya</b> pada element. Cascading memberi struktur gaya mana yang dipakai dulu, gaya apa yang diprioritaskan.</p>
+	</header>
+	<main>
+		<h3>Konsep CSS  yang krusial :</h3>
+		<ul>
+			<li>Property Style dan relasi antar propertinya</li>
+			<p>contoh : display menjadi pembuka untuk flex dan grid. variasi position membuat item inline bisa memiliki modifikasi block (inline-block)</p>
+			<li>Style default dari tag</li>
+			<li>Modifikasi inherit dari tag parent bisa diikuti turunanya</li>
+		</ul>
+
+		<h3>Konsep dan Elemen CSS (yang penulis pahami):</h3>
+		<ul>
+			<li>Padding, Border, Margin</li>
+			<li>text dan font styles</li>
+			<li>display dan position</li>
+			<li>List Style</li>
+			<li>Parallax</li>
+		</ul>
+	</main>
+	<div class="tau">
+		<h3>hal-hal CSS yang penulis masih belajar konsepnya :</h3>
+		<ol>
+			<li><h4>Grid dan Flex container items</h4></li>
+			<p>dibutuhkan untuk web yang responsive. untuk membagi kolom dan baris masing-masing item dan sifat-sifat atributnya. justify merujuk main axis</p>
+			<li><h4>Global Values</h4></li>
+			<p></p>
+			<li><h4>Media Responsive width</h4></li>
+			<p></p>
+			<li><h4>Absolute, Relative, Fixed</h4></li>
+			<p></p>
+			<li><h4>::before dan ::after</h4></li>
+			<li><h4>px  ex vh fr rem ch mm % auto</h4></li>
+			<p>selain px dan mm. sifat yang lainnnya relatif terhadap </p>
+		</ol>
+	</div>
+
+	<h3>Poin-poin dalam Course Introducing to CSS (Sololearn) :</h3>
+	<ul>
+		<li>Getting Started {What is CSS, CSS Selector, Class & ID, Text Color & Size, Styling Text, Font Style}</li>
+		<li>Styling Element {The Box Model, Box Size, Borders, Backgrounds, Styling Lists, Links, Styling Tables, Styling Forms, CSS Layout, Positioning}</li>
+		<li>Transition & Transforms {Transforms, Transitions, Keyframes & Animation, Animation Properties}</li>
+	</ul>
+
+	<footer>
+	<h2>Tentang Halaman</h2>
+	<p>Dibuat menggunakan CSS murni, hanya model basic.<br>Ditulis oleh <a href="https://www.linkedin.com/in/leoptobing" target="_blank" rel="noopener noreferrer">Leo Prangs T.</a> <a href="https://github.com/Leo42night/" target="_blank" rel="noopener noreferrer"><img src="github.jpg" alt="" class="fb"></a> <br>23 Juli 2023</p>
+	</footer>
+	</div>
+
+	<script type="text/javascript">
+	// create CSS
+	const link = document.createElement("link");
+	link.setAttribute("rel","stylesheet");
+	link.setAttribute("href","style.css");
+
+	// fungsi change style
+	let css = false;
+	const button = document.getElementById("but");
+	function change(){
+		if (!css){
+			document.head.appendChild(link);
+			document.getElementById("but").innerHTML= "Reset!";
+			css = true;
+		}
+		else {
+			document.head.removeChild(link);
+			document.getElementById("but").innerHTML= "Upgrade!";
+			css = false;	
+		}
+	}	
+	</script>
+</body>
+</html>
